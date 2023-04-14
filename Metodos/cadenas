@@ -1,0 +1,54 @@
+#region
+#DIR-devuelve la lista de los atributos validos del objeto pasado
+
+#UPPER- convierte a mayuscula
+#LOWER- Convierte a minuscula
+#CAPITALIZE-primera en mayuscula
+
+#FIND- encuentra la primera aparicion del valor especificado
+#INDEX- encuentra la primera aparicion del valor especificado, sino devuelve una excepcion
+
+#ISNUMERIC- si es numerico devuelve True
+#ISALPHA- si es alfa numerico devuelve True
+
+#COUNT- devuelve el numero de ocurrencias de una subcadena en la cadena dada
+#LEN- cuenta los caracteres de una cadena
+
+#ENDSWITH- verifica si una cadena termina con:
+#STARTSWITH- verifica si una cadena comienza con:
+
+#REPLACE-remplaza un valor por otro
+#SPLIT- separa por el parametro dado
+#endregion
+cadena1 = "Hello World"
+cadena2 = "Welcome"
+
+#convierte a mayus
+resultado1 = cadena2.upper()
+#convierte a minus
+resultado2 = cadena2.lower()
+#primera letra en mayus
+resultado3 = cadena2.capitalize()
+#buscamos una cadena en otra cadena, si no hay coincidencia devuelve -1
+resultado4 = cadena1.find("l")
+#buscamos una cadena en otra cadena, si no hay coincidencias lanza una exepcion
+resultado5 = cadena1.index("l")
+
+#si es numerico devuelve true sino es false
+resultado6 = cadena1.isnumeric()
+#si es alpha numerico devuelve true sino es false, son los espacios
+resultado7 = cadena1.isalpha()
+#buscamos una cadena en otra cadena, devuelve la cantidad de veces que coincida
+resultado8 = cadena1.count("el")
+#len- funcion que cuenta cuantos caracteres tine una cadena
+resultado9 = len(cadena1)
+#verificamos si una cadena empieza con una cadena dada
+resultado10 = cadena1.startswith("h")
+#verificamos si una cadena termina con una cadena dada
+resultado11 = cadena1.endswith("h")
+#Si el valor 1, se encuentra en la cadena original, reemplaza el vlor 1de la misma, por el valor 2
+resultado12 = cadena1.replace("rld","rk")
+#separar cadenas con la cadena que le pasemos
+resultado13 = cadena1.split(",")
+print(resultado13)
+
